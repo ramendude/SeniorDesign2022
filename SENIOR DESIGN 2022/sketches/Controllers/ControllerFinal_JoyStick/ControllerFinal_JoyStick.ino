@@ -384,7 +384,6 @@ void loop() {
             ctrl[1] = 0;  //y -0.3
             ctrl[2] = 0; //y -0.1
             //If X,Y,Z positions are zeros, then the position is calculated based on IMUs
-            //���� X,Y,Z ������� �� ����� ������ ������� �������������� �� ������ IMUs
             
             ctrl[3] = ypr[0] * 180/M_PI;
             ctrl[4] = ypr[2] * 180/M_PI * -1;
@@ -422,17 +421,12 @@ void loop() {
             if (digitalRead(TriggerBtnPin) == LOW)
               ctrl[9] = 1;
 
-            //Stick emulation
+            //Joystick 
             xPosition = analogRead(VRx);
             yPosition = analogRead(VRy);
             SW_state = !digitalRead(SW);
             mapX = map(xPosition, 0, 1023, -512, 512);
             mapY = map(yPosition, 0, 1023, -512, 512);
-//            Serial.print(mapX);
-//            Serial.print(" ");
-//            Serial.print(mapY);
-//            Serial.print(" ");
-//            Serial.println(SW_state);
 
             if (mapY > 360)
               ctrl[11] = 1; //Up
