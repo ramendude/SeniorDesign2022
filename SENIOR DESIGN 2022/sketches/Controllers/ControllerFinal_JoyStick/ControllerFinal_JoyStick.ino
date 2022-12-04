@@ -164,14 +164,14 @@ void dmpDataReady() {
 #define MENU_BTN  0x0010
 #define SYS_BTN   0x0020
 
-//Digital pins number / ������ �������� �����
+//Digital pins number
 const byte TriggerBtnPin = 3;
 const byte GripBtnPin = 4;
 const byte ThumbStickBtnPin = 5;
 const byte MenuBtnPin = 6;
 const byte SystemBtnPin = 7;
 
-//Button for emulating stick movement
+//Joystick 
 const int SW = 8;
 const int VRx = A0;
 const int VRy = A1;
