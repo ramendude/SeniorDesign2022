@@ -8,4 +8,4 @@ Test for buttons, joysticks, input devices only
 Final for MPU + Input for LR controllers
 
 -MPU6056_DMP6 (Headset)
- Final for MPU Headset 
+Final for MPU Headset 
