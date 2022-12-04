@@ -5,7 +5,7 @@ Calibration needed for correct offset values for MPUs
 Test for buttons, joysticks, input devices only
 
 -ControllerFinal_JoyStick (L & R)
-MPU + Input for Left and Right controllers
+Final for MPU + Input for LR controllers
 
 -MPU6056_DMP6 (Headset)
-MPU Headset only
+ Final for MPU Headset 
